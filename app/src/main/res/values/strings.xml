@@ -15,4 +15,8 @@
     <string name="textBtnFive">5</string>
     <string name="textBtnSix">6</string>
     <string name="textBtnMinus">-</string>
+    <string name="textBtnOne">1</string>
+    <string name="textBtnTwo">2</string>
+    <string name="textBtnThree">3</string>
+    <string name="textBtnPlus">+</string>
 </resources>
