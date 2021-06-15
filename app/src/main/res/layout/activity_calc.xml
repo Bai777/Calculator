@@ -1,8 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".CalcActivity">
+
+    <TextView
+        android:id="@+id/calcDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginTopDisplay"
+        android:gravity="end"
+        android:text="@string/_0"
+        android:textAlignment="textEnd"
+        android:textColor="@color/purple_500"
+        android:textSize="@dimen/textSizeDisplay"
+        app:layout_constraintBottom_toTopOf="@+id/btnAC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread" />
+
+    <Button
+        android:id="@+id/btnAC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textBtnAC"
+        android:textSize="@dimen/sizeBtnCalc"
+        app:layout_constraintEnd_toStartOf="@id/btnPlusMinus"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calcDisplay" />
+
+    <Button
+        android:id="@+id/btnPlusMinus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textBtnPlusMinus"
+        android:textSize="@dimen/sizeBtnCalc"
+        app:layout_constraintEnd_toStartOf="@id/btnPercent"
+        app:layout_constraintStart_toEndOf="@id/btnAC"
+        app:layout_constraintTop_toBottomOf="@+id/calcDisplay" />
+
+    <Button
+        android:id="@+id/btnPercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textBtnPercent"
+        android:textSize="@dimen/sizeBtnCalc"
+        app:layout_constraintEnd_toStartOf="@id/btnDiv"
+        app:layout_constraintStart_toEndOf="@id/btnPlusMinus"
+        app:layout_constraintTop_toBottomOf="@+id/calcDisplay" />
+
+    <Button
+        android:id="@+id/btnDiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textBtnDiv"
+        android:textSize="@dimen/sizeBtnCalc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnPercent"
+        app:layout_constraintTop_toBottomOf="@+id/calcDisplay" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
