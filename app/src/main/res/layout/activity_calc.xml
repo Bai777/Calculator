@@ -31,7 +31,7 @@
         app:layout_constraintEnd_toStartOf="@id/btnPlusMinus"
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/calcDisplay" />
+        app:layout_constraintTop_toBottomOf="@id/calcDisplay" />
 
     <Button
         android:id="@+id/btnPlusMinus"
@@ -41,7 +41,7 @@
         android:textSize="@dimen/sizeBtnCalc"
         app:layout_constraintEnd_toStartOf="@id/btnPercent"
         app:layout_constraintStart_toEndOf="@id/btnAC"
-        app:layout_constraintTop_toBottomOf="@+id/calcDisplay" />
+        app:layout_constraintTop_toBottomOf="@id/calcDisplay" />
 
     <Button
         android:id="@+id/btnPercent"
@@ -51,7 +51,7 @@
         android:textSize="@dimen/sizeBtnCalc"
         app:layout_constraintEnd_toStartOf="@id/btnDiv"
         app:layout_constraintStart_toEndOf="@id/btnPlusMinus"
-        app:layout_constraintTop_toBottomOf="@+id/calcDisplay" />
+        app:layout_constraintTop_toBottomOf="@id/calcDisplay" />
 
     <Button
         android:id="@+id/btnDiv"
@@ -61,6 +61,49 @@
         android:textSize="@dimen/sizeBtnCalc"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/btnPercent"
-        app:layout_constraintTop_toBottomOf="@+id/calcDisplay" />
+        app:layout_constraintTop_toBottomOf="@id/calcDisplay" />
+
+    <Button
+        android:id="@+id/btnSeven"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textBtnSeven"
+        android:textSize="@dimen/sizeBtnCalc"
+        app:layout_constraintEnd_toStartOf="@id/btnEight"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnAC" />
+
+    <Button
+        android:id="@+id/btnEight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textBtnEight"
+        android:textSize="@dimen/sizeBtnCalc"
+        app:layout_constraintEnd_toStartOf="@id/btnNine"
+        app:layout_constraintStart_toEndOf="@id/btnSeven"
+        app:layout_constraintTop_toBottomOf="@id/btnPlusMinus" />
+
+    <Button
+        android:id="@+id/btnNine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textBtnNine"
+        android:textSize="@dimen/sizeBtnCalc"
+        app:layout_constraintEnd_toStartOf="@id/btnMulti"
+        app:layout_constraintStart_toEndOf="@id/btnEight"
+        app:layout_constraintTop_toBottomOf="@id/btnPercent" />
+
+    <Button
+        android:id="@+id/btnMulti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textBtnMulti"
+        android:textSize="@dimen/sizeBtnCalc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnNine"
+        app:layout_constraintTop_toBottomOf="@+id/btnDiv" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
