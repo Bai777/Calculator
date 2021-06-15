@@ -104,6 +104,45 @@
         app:layout_constraintStart_toEndOf="@id/btnNine"
         app:layout_constraintTop_toBottomOf="@+id/btnDiv" />
 
+    <Button
+        android:id="@+id/btnFour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textBtnFour"
+        android:textSize="@dimen/sizeBtnCalc"
+        app:layout_constraintEnd_toStartOf="@id/btnFive"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnSeven" />
 
+    <Button
+        android:id="@+id/btnFive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textBtnFive"
+        android:textSize="@dimen/sizeBtnCalc"
+        app:layout_constraintEnd_toStartOf="@id/btnSix"
+        app:layout_constraintStart_toEndOf="@id/btnFour"
+        app:layout_constraintTop_toBottomOf="@id/btnEight" />
+
+    <Button
+        android:id="@+id/btnSix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textBtnSix"
+        android:textSize="@dimen/sizeBtnCalc"
+        app:layout_constraintEnd_toStartOf="@id/btnMinus"
+        app:layout_constraintStart_toEndOf="@id/btnFive"
+        app:layout_constraintTop_toBottomOf="@id/btnNine" />
+
+    <Button
+        android:id="@+id/btnMinus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textBtnMinus"
+        android:textSize="@dimen/sizeBtnCalc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnSix"
+        app:layout_constraintTop_toBottomOf="@+id/btnMulti" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

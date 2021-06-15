@@ -11,4 +11,8 @@
     <string name="textBtnNine">9</string>
     <string name="textBtnMulti">*</string>
     <string name="textBtnEight">8</string>
+    <string name="textBtnFour">4</string>
+    <string name="textBtnFive">5</string>
+    <string name="textBtnSix">6</string>
+    <string name="textBtnMinus">-</string>
 </resources>
