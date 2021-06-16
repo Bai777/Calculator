@@ -7,26 +7,44 @@
     android:background="@color/teal_200"
     tools:context=".MainActivity">
 
+
+
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/appCompatImageViewMain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/calcViewMain"
+        app:layout_constraintBottom_toTopOf="@+id/buttonMianLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:adjustViewBounds="true"
         app:srcCompat="@drawable/calcimgmain" />
+
 
     <Button
         android:id="@+id/buttonMianLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="112dp"
+        android:layout_marginTop="@dimen/topMarginMainButton"
         android:text="@string/nameBtnMainLayout"
+        android:onClick="calcView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/appCompatImageViewMain" />
+        app:layout_constraintTop_toBottomOf="@+id/appCompatImageViewMain"
+        tools:ignore="UsingOnClickInXml" />
+
+    <Button
+        android:id="@+id/buttonScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/topMarginMainButton"
+        android:text="@string/btnScrollView"
+        android:onClick="scrolViewShow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMianLayout"
+        tools:ignore="UsingOnClickInXml" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
