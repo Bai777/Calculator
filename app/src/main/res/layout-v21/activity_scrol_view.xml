@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <EditText
+
+        android:id="@+id/edit1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/transparent"
+        android:gravity="top"
+        android:maxLines="1"
+        android:text="text text text\ntext text text\ntext text text\ntext text text"
+        android:textSize="@dimen/sizeBtnCalc"
+        android:autofillHints=""
+        android:inputType="text"
+        tools:ignore="LabelFor,TextFields" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Не скроллится(нельзя просмотреть все строки)-->
+            <EditText
+
+                android:id="@+id/edit2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="text text text\ntext text text\ntext text text\ntext text text"
+                android:textSize="@dimen/sizeBtnCalc" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/android_robot"
+                app:srcCompat="@drawable/android_robot" />
+
+            <!-- И так тоже не работает -->
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <EditText
+
+                    android:id="@+id/edit3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="text text text\ntext text text\ntext text text\ntext text text"
+                    android:textSize="@dimen/sizeBtnCalc"/>
+            </androidx.core.widget.NestedScrollView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/android_robot"
+                app:srcCompat="@drawable/android_robot" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

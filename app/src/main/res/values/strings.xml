@@ -22,4 +22,10 @@
     <string name="textBtnZero">0</string>
     <string name="textBtnComma">,</string>
     <string name="textBtnEqually">=</string>
+    <string name="editTextOne">text text text\ntext text text\ntext text text\ntext text text</string>
+    <string name="editTextText">text text text\ntext text text\ntext text text\ntext text text</string>
+    <string name="this_is_robot">this is robot</string>
+    <string name="editTextTwo">text text text\ntext text text\ntext text text\ntext text text</string>
+    <string name="robot">robot</string>
+    <string name="btnScrollView">Scroll View</string>
 </resources>
